@@ -10,11 +10,12 @@ struct Question {
      
     let text: String
     let answer: String
+    let variants: [String]
     
-    init(q: String, a: String) {
+    init(q: String,  v: [String], a: String) {
         text = q
         answer = a
-        
+        variants = v
     }
    
 }

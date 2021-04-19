@@ -25,17 +25,31 @@
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPE-OZ-flG">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="62"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-Bb-aXF">
-                                        <rect key="frame" x="0.0" y="92.5" width="374" height="525.5"/>
+                                        <rect key="frame" x="0.0" y="72" width="374" height="456"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTW-un-vLZ">
+                                        <rect key="frame" x="0.0" y="538" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="lZh-Gd-yHJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="First Variant" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gl7-AN-zAR"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSV-pN-MDS">
                                         <rect key="frame" x="0.0" y="628" width="374" height="80"/>
                                         <constraints>
@@ -90,11 +104,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="cs3-g8-Rzi" id="cn4-ra-FgR"/>
+                        <outlet property="firstVariantButton" destination="eTW-un-vLZ" id="xTk-eC-H6k"/>
                         <outlet property="progressBar" destination="r8m-b3-ce5" id="VwK-H4-0Ei"/>
                         <outlet property="questionLabel" destination="cxN-Bb-aXF" id="2xx-V6-DX9"/>
                         <outlet property="scoreLabel" destination="UPE-OZ-flG" id="iQz-c7-TS9"/>
-                        <outlet property="trueButton" destination="kSV-pN-MDS" id="Xk8-r1-O13"/>
+                        <outlet property="secondVariantButton" destination="kSV-pN-MDS" id="Xk8-r1-O13"/>
+                        <outlet property="thirdVariantButton" destination="cs3-g8-Rzi" id="cn4-ra-FgR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
